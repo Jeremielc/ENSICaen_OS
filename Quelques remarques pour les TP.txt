@@ -1,0 +1,11 @@
+Quelques remarques pour les TP
+
+
+Dans la cas de redirection de STDOUT vers un pipe, vous ne pouvez plus faire de printf vers la console. Utilisez dans ce cas un fprintf(STDERR,...).
+
+Pour l'exercice 2.4 sur BC, il faut obligatoirement que le message  comporte un \n à la fin (l'ajouter avec  scanf ou utiliser fgets).
+
+Sur le deuxième exercice des philosophes, il faut que le semop réalise une opération atomique sur deux sémaphores pour prendre en compte la prise simultanée de deux fourchettes.  
+
+Pour l'évaluation des durées de threads, utilisés time et difftime (http://www.cplusplus.com/reference/ctime/difftime/) et ne pas exploiter clock (la mesure de temps et dans ce cas fausses avec plusieurs threads).
+
